@@ -1,0 +1,28 @@
+
+responsiveBreakpoints = {
+  tablet    :   768px,
+  desktop   :   960px
+}
+
+
+// Set properties UP TO A certain breakpoint
+  // - for mobile devices only
+smallOnly()
+  @media (max-width: responsiveBreakpoints[tablet] - 1px)  
+    {block}
+
+  // - for mobile and tablet devices only
+smallMedium()
+  @media (max-width: responsiveBreakpoints[desktop] - 1px)  
+    {block}
+    
+// Set properties FROM A certain breakpoint
+  // - from tablet devices
+mediumLarge()
+  @media (min-width: responsiveBreakpoints[tablet])  
+    {block}
+    
+  // - from desktop computer
+largeOnly()
+  @media (min-width: responsiveBreakpoints[desktop])  
+    {block}

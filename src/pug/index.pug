@@ -1,0 +1,30 @@
+block vars
+  - var pageTitle = 'Harold'
+
+head
+  title #{pageTitle}
+  link(href='assets/css/main.css' rel='stylesheet')
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+
+body
+
+  a(href='/')
+    img.logo(src='assets/images/harold-logo.png' alt='Harold Logo')
+
+  nav.siteNavigation
+    
+    input.navTrigger(type='checkbox')
+
+    span.navTriggerIcon 
+      img(src='assets/images/navtrigger.svg')
+
+    ul
+      li
+        a(href='#') blog
+      li
+        a(href='#') projects
+      li
+        a(href='#') about harold
+      li
+        a(href='#') get in touch
+
