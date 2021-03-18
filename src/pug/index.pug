@@ -3,28 +3,85 @@ block vars
 
 head
   title #{pageTitle}
-  link(href='assets/css/main.css' rel='stylesheet')
+  link(href='assets/css/index.css' rel='stylesheet')
   meta(name="viewport" content="width=device-width, initial-scale=1")
 
 body
+  .mainGrid
+    nav.siteNavigation
+      a(href='/')
+        img.logo(src='assets/images/harold-logo.png' alt='Harold Logo')
 
-  a(href='/')
-    img.logo(src='assets/images/harold-logo.png' alt='Harold Logo')
+      input.navTrigger(type='checkbox')
+      span.navTriggerIcon 
+        img(src='assets/images/navtrigger.svg')
+      ul
+        li
+          a.active(href='#') home
+        li
+          a(href='#') blog
+        li
+          a(href='#') projects
+        li
+          a(href='#') about harold
+        li
+          a(href='#') get in touch
 
-  nav.siteNavigation
-    
-    input.navTrigger(type='checkbox')
+    .content
+      section.grid._gridV1
+        div.gridItem._item1
+          img.itemImg(src='assets/images/testimgs/1.jpg')
+          figure.itemMeta._placeEndEnd
+            small.itemTags design
+            h1.itemTitle
+              a.link(href='#') 1 Most of us are cats!
+            span.itemDate January 21, 2020
 
-    span.navTriggerIcon 
-      img(src='assets/images/navtrigger.svg')
+        div.gridItem._item2
+          img.itemImg(src='assets/images/testimgs/2.jpg')
+          figure.itemMeta._placeEndEnd
+            small.itemTags frontend
+            h1.itemTitle
+              a(href='#') An Efficient Way of Creating Viewport-Specific CSS classes using SASS
+            span.itemDate January 25, 2020
 
-    ul
-      li
-        a(href='#') blog
-      li
-        a(href='#') projects
-      li
-        a(href='#') about harold
-      li
-        a(href='#') get in touch
+        
+        div.gridItem._item3
+          img.itemImg(src='assets/images/testimgs/1.jpg')
+          figure.itemMeta._placeEndEnd
+            small.itemTags design
+            h1.itemTitle
+              a.link(href='#') Design is important but not the secret sauce to product success
+            span.itemDate January 21, 2020
 
+        div.gridItem._item4
+          img.itemImg(src='assets/images/testimgs/4.jpg')
+          figure.itemMeta._placeEndEnd
+            small.itemTags projects
+            h1.itemTitle
+              a(href='#') Anong Network
+            span.itemDate January 25, 2020
+
+        div.gridItem._item5
+          img.itemImg(src='assets/images/testimgs/1.jpg')
+          figure.itemMeta._placeEndEnd
+            small.itemTags projects
+            h1.itemTitle
+              a(href='#') Listahan.net
+            span.itemDate January 25, 2020
+
+        div.gridItem._item6
+          img.itemImg(src='assets/images/testimgs/3.jpg')
+          figure.itemMeta._placeEndEnd
+            small.itemTags design
+            h1.itemTitle
+              a(href='#') An Efficient Way of Creating Viewport-Specific CSS classes using SASS
+            span.itemDate January 25, 2020
+
+        div.gridItem._item7
+          img.itemImg(src='assets/images/testimgs/2.jpg')
+          figure.itemMeta._placeEndEnd
+            small.itemTags design
+            h1.itemTitle
+              a(href='#') 7 An Efficient Way of Creating Viewport-Specific CSS classes using SASS
+            span.itemDate January 25, 2020

@@ -1,0 +1,32 @@
++smallMedium()
+  .grid
+    display grid  
+  
+    .gridItem
+      min-height 200px
+      position relative
+      padding-left 80px  
+      
+    .itemImg
+      position absolute
+      transition all 300ms
+      max-height 140px
+      z-index 1
+      opacity 0.3
+    
+    .itemMeta
+      position relative
+      z-index 2
+
+
+._itemV1 img
+  +smallMedium()
+    left 5%
+    transform scale(80%) rotate(-4deg)
+  
+  //transform 
+    
+._itemV1:active img
+  smallMedium()
+    left 6.5%
+    transform scale(90%) rotate(0deg)

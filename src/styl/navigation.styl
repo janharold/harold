@@ -1,40 +1,15 @@
-@import 'reset'
-@import 'breakpoints'
-@import 'colors'
-@import 'font-face'
-@import 'spacing'
-
-body 
-  background-color sh900
-  color sh000
-  font-family 'ArticulatCF Regular', Helvetica Neue, Helvetica, Arial, sans-serif
-  font-size 18px
-
-a
-  transition all 350ms ease-in-out
-
-.logo
-  bottom 110px
-  left -45px
-  position fixed
-  transform rotate(270deg)
-  max-width 170px
-  
-  +mediumLarge()
-    bottom 120px
-    left -60px
-    max-width 220px
-    
-
 
 .siteNavigation
+  
+  //position sticky
+
   .navTrigger,
   .navTriggerIcon
     display none
     
   +smallOnly()
     position fixed
-    bottom 35%
+    bottom 200px
     width 70%
     
     .navTrigger,
@@ -101,13 +76,21 @@ a
     list-style none
   // Desktop
     
-  +largeOnly()
+  +mediumLarge()
     ul
       margin sLarge 0 0 
       padding 0
+      position fixed
     
     a
       padding-left sXLarge
+      border-bottom 1px solid transparent
+      
+    a:not(.active):hover
+      color or500
+      border-bottom 1px solid or500
+      text-decoration none
+
     a.active
       color or500
       border-left 8px solid or500
